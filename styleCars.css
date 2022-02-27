@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+html, body {
+    position: relative;
+    scroll-behavior: smooth;
+    min-height: 89vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 18vh;
+    background-color: snow;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+}
+
+.upper_header {
+    max-width: 65vw;
+    margin: 0 auto;
+    height: 75%;
+    position: relative;
+
+}
+
+.lower_header {
+    height: 21%;
+    margin: 0 auto;
+    max-width: 65vw;
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5vh;
+
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5vh;
+    color: red;
+    position: relative;
+    padding-top: 3vh;
+}
+
+.specs_title {
+    background-color: rgb(255,0,0);
+    color: white;
+    height: 7vh;
+    position:absolute;
+    width: 25vh;
+    z-index: 1;
+
+}
+
+.tableClass {
+    height: 100%;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    margin: 2vh auto;
+}
+
+.one{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: rgb(245,245,245);
+}
+
+.one > div {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+.two{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.two > div {
+    text-align: center;
+    margin: auto;
+}
+
+
+.three{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: rgb(245,245,245);
+}
+
+.three > div {
+    text-align: center;
+    margin: auto;
+}
+
+
+.four{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.four > div {
+    text-align: center;
+    margin: auto;
+}
+
+
+.five{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: rgb(245,245,245);
+}
+
+.five > div {
+    text-align: center;
+    margin: auto;
+}
+
+
+.six{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    
+}
+
+.six > div {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+.specsTitle_container {
+    height: 7vh;
+    z-index: -1;
+    background-color: rgb(245,245,245);
+}   
+
+.specs_title h3 {
+    text-align: center;
+    margin-top: 1.9vh;
+}
+
+.upper_header * {
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.up1 {
+    margin-top: 0%;
+}
+
+.up2 > h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5vh;
+    position: relative;
+    color: gray;
+    margin-top: -3%;
+    margin-left: 7.5%;
+    letter-spacing: 2vh;
+}
+
+.myList{
+    list-style-type: none;
+    display: flex;
+    padding-left: 5.5vh;
+}
+
+.myList li {
+    list-style-type: none;
+    display: flex;
+    margin: 0 4% 0 0;
+    cursor: pointer;
+    border-bottom: 0px solid red;
+    transition: ease-in-out 0.1s;
+} 
+
+.myList li:hover {
+    border-bottom: 2px solid red;
+    transition: ease-in-out 0.1s;
+}  
+
+main {
+    padding: 0;
+    width: 100%;
+    min-height: 220vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main_container {
+    height: 190.6vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    min-width: 1080px;
+    margin: 0 auto;
+}
+
+.footer_container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rights {
+    position: absolute;
+    bottom: 6vh;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+.footer_container > div > a > img {
+    width: 8vh;
+    margin: 0 2vh;
+    transition: ease 0.5s;    
+}
+
+.footer_container > div > a{
+    z-index: 9; 
+}
+
+.footer_container > div > a > img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease 0.5s; 
+    filter: invert(10%) sepia(98%) saturate(7202%) hue-rotate(3deg) brightness(106%) contrast(110%);
+}
+
+.title_main {
+    min-height: 10%;
+    position: relative;
+}
+
+.title_main > h1 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 4vh;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.image_container {
+    min-height: 170vh;
+}
+
+.corolla_image {
+    margin: 2vh 0vh 0vh 2vh;
+    /* padding-right: 20px; */
+    width: 40vh;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    box-shadow: 2px 2px 15px;
+}
+
+.specs {
+    min-height: 110vh;
+    position: relative;
+}
+
+.image_text {
+    margin-top: 1vh;
+    font-size: 1.2em;
+    line-height: 45px;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+    
+}
+
+.main_content {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.historic {
+    color: red;
+    font-weight: 900;
+    margin-top: 8vh;
+    height: 40%;
+    font-size: 3vh;
+    padding-left: 6vh;
+}
+
+.tableClass {
+    height: 90vh;
+    width: 99vh;
+}
+
+
+
+.image_inner {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "first second third"
+        "fourth fifth sixth";
+    grid-gap: 5vh;
+    margin-top: 5%;
+    max-width: 1050px;
+    margin: 2vh auto;
+}
+
+.image_inner * {
+    min-width: 30vh;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+.image_inner > div {
+    position: relative;
+    transition: ease-in-out 0.3s;
+}
+
+.image_inner > div > h4 {
+    position: absolute;
+    bottom: 7.5vh;
+    font-size: 1.6vh;
+}
+
+.ae92 {
+    background-image: url(img/corolla.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    display: flex;
+    grid-area: first;
+}
+
+
+
+.ae101 {
+    background-image: url(img/ae101.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: second;
+}
+
+.solara {
+    background-image: url(img/solara.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: third;
+}
+
+.celica {
+    background-image: url(img/celica.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: fourth;
+}
+
+.corona {
+    background-image: url(img/corona.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: fifth;
+}
+
+.van {
+    background-image: url(img/van.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: sixth;
+}
+
+.image_inner > div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1067px) {
+    .image_inner {
+        height: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "first second"
+            "third fourth"
+            "fifth sixth";
+        grid-gap: 3vh;
+        max-width: 1050px;
+        margin: 2vh auto;
+    
+    }
+
+    .image_inner * {
+        min-width: 20vh;
+        font-family: 'JetBrains Mono', monospace;
+    
+    }
+
+    .main_container {
+        height: 250.6vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 60vw;
+        min-width: 750px;
+        margin: 0 auto;
+        
+    }
+
+    .specs {
+        height: 50vh;
+    }
+
+
+    .image_inner > div > h4 {
+        position: absolute;
+        bottom: -1vh;
+        left: 4vh;
+        font-size: 1.6vh;
+    }
+
+    /* images */
+    .ae92 {
+        background-image: url(img/ae92.jpg);
+        background-size: 80% 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        grid-area: first;
+    }
+    
+    
+    
+    .ae101 {
+        background-image: url(img/ae101.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: second;
+    }
+    
+    .solara {
+        background-image: url(img/solara.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: third;
+    }
+    
+    .celica {
+        background-image: url(img/celica.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: fourth;
+    }
+    
+    .corona {
+        background-image: url(img/corona.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: fifth;
+    }
+    
+    .van {
+        background-image: url(img/van.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: sixth;
+    }
+    .title_main > h1 {
+        text-align: center;
+        margin-top: 5vh;
+        font-size: 4vh;
+        font-family: 'JetBrains Mono', monospace;
+    }
+    
+    .tableClass {
+        height: 90vh;
+        width: 80vh;
+    }
+}

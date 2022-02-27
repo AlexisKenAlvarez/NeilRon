@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+html, body {
+    position: relative;
+    scroll-behavior: smooth;
+    min-height: 89vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 18vh;
+    background-color: snow;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+
+.upper_header {
+    max-width: 65vw;
+    margin: 0 auto;
+    height: 75%;
+    position: relative;
+
+}
+
+.lower_header {
+    height: 21%;
+    margin: 0 auto;
+    max-width: 65vw;
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5vh;
+
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5vh;
+    color: red;
+    position: relative;
+    padding-top: 3vh;
+}
+
+.upper_header * {
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up1 {
+    margin-top: 0%;
+}
+
+.up2 > h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5vh;
+    position: relative;
+    color: gray;
+    margin-top: -3%;
+    margin-left: 7.5%;
+    letter-spacing: 2vh;
+}
+
+.myList{
+    list-style-type: none;
+    display: flex;
+    padding-left: 5.5vh;
+}
+
+.myList li {
+    list-style-type: none;
+    display: flex;
+    margin: 0 4% 0 0;
+    cursor: pointer;
+    border-bottom: 0px solid red;
+    transition: ease-in-out 0.1s;
+} 
+
+.myList li:hover {
+    border-bottom: 2px solid red;
+    transition: ease-in-out 0.1s;
+}  
+
+main {
+    padding: 0;
+    width: 100%;
+    min-height: 140vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main_container {
+    height: 119.6vh;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    min-width: 1080px;
+    margin: 0 auto;
+}
+
+.rights {
+    position: absolute;
+    bottom: 6vh;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.footer_container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer_container > div > a > img {
+    width: 8vh;
+    margin: 0 2vh;
+    transition: ease 0.5s;    
+}
+
+.footer_container > div > a > img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease 0.5s; 
+    filter: invert(10%) sepia(98%) saturate(7202%) hue-rotate(3deg) brightness(106%) contrast(110%);
+}
+
+.title_main {
+    min-height: 10%;
+    position: relative;
+}
+
+.image_container {
+    height: 90%;
+}
+
+.historic {
+    color: red;
+    font-weight: 900;
+    margin-top: 8vh;
+    height: 40%;
+    font-size: 3vh;
+    padding-left: 6vh;
+}
+
+.image_inner {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "first second third"
+        "fourth fifth sixth";
+    grid-gap: 5vh;
+    margin-top: 5%;
+    max-width: 1050px;
+    margin: 2vh auto;
+}
+
+.image_inner * {
+    min-width: 30vh;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+.image_inner > div {
+    position: relative;
+    transition: ease-in-out 0.3s;
+}
+
+.image_inner > div > h4 {
+    position: absolute;
+    bottom: 7.5vh;
+    font-size: 1.6vh;
+}
+
+.ae92 {
+    background-image: url(img/corolla.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    display: flex;
+    grid-area: first;
+}
+
+
+
+.ae101 {
+    background-image: url(img/ae101.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: second;
+}
+
+.solara {
+    background-image: url(img/solara.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: third;
+}
+
+.celica {
+    background-image: url(img/celica.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: fourth;
+}
+
+.corona {
+    background-image: url(img/corona.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: fifth;
+}
+
+.van {
+    background-image: url(img/van.jpg);
+    background-size: 100% 67%;
+    background-repeat: no-repeat;
+    grid-area: sixth;
+}
+
+.image_inner > div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    color: red;
+}
+
+@media screen and (max-width: 1067px) {
+    .image_inner {
+        height: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "first second"
+            "third fourth"
+            "fifth sixth";
+        grid-gap: 3vh;
+        max-width: 1050px;
+        margin: 2vh auto;
+    
+    }
+
+    .image_inner * {
+        min-width: 20vh;
+        font-family: 'JetBrains Mono', monospace;
+    
+    }
+
+    .main_container {
+        height: 119.6vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 60vw;
+        min-width: 750px;
+        margin: 0 auto;
+        
+    }
+
+
+    .image_inner > div > h4 {
+        position: absolute;
+        bottom: -1vh;
+        left: 4vh;
+        font-size: 1.6vh;
+    }
+
+    /* images */
+    .ae92 {
+        background-image: url(img/ae92.jpg);
+        background-size: 80% 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        grid-area: first;
+    }
+    
+    
+    
+    .ae101 {
+        background-image: url(img/ae101.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: second;
+    }
+    
+    .solara {
+        background-image: url(img/solara.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: third;
+    }
+    
+    .celica {
+        background-image: url(img/celica.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: fourth;
+    }
+    
+    .corona {
+        background-image: url(img/corona.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: fifth;
+    }
+    
+    .van {
+        background-image: url(img/van.jpg);
+        background-size: 80% 80%;
+        background-position: center;  
+        background-repeat: no-repeat;
+        grid-area: sixth;
+    }
+
+    .title_main {
+        min-height: 10%;
+        position: relative;
+    }
+    
+}
